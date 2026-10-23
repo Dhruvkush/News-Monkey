@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/News-Monkey/static/css/main.87ae06ed.css",
-    "main.js": "/News-Monkey/static/js/main.aba236ea.js",
+    "main.js": "/News-Monkey/static/js/main.c9985402.js",
     "static/js/453.9d84c41c.chunk.js": "/News-Monkey/static/js/453.9d84c41c.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/News-Monkey/static/media/Montserrat-Regular.6ba02f4ea581c0308b99.ttf",
     "static/media/Montserrat-ExtraLight.ttf": "/News-Monkey/static/media/Montserrat-ExtraLight.bc87f2bf431816761b9e.ttf",
@@ -11,11 +11,11 @@
     "static/media/light.png": "/News-Monkey/static/media/light.f38abd4b4bcc934ca10a.png",
     "index.html": "/News-Monkey/index.html",
     "main.87ae06ed.css.map": "/News-Monkey/static/css/main.87ae06ed.css.map",
-    "main.aba236ea.js.map": "/News-Monkey/static/js/main.aba236ea.js.map",
+    "main.c9985402.js.map": "/News-Monkey/static/js/main.c9985402.js.map",
     "453.9d84c41c.chunk.js.map": "/News-Monkey/static/js/453.9d84c41c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87ae06ed.css",
-    "static/js/main.aba236ea.js"
+    "static/js/main.c9985402.js"
   ]
 }
