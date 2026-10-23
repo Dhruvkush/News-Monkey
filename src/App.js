@@ -29,7 +29,7 @@ const App = () => {
     return (
 
       <div className={mode === "dark" ? "dark-mode" : ""} >
-        <BrowserRouter>
+        <BrowserRouter basename="/News-Monkey">
           <Navbar className={mode === "dark" ? "dark-mode" : ""} mode={mode} toggleMode={toggleMode} />
 
           <LoadingBar
