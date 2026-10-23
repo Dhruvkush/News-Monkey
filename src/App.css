@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +37,187 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-color:#f7f7fe;
+}
+
+.active-category {
+  position: relative;
+  color: rgb(10, 10, 10);
+}
+.dark-mode .active-category {
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.active-category::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 89, 0, 0.737);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+
+.dark-mode {
+  background-color: #090c11f9;
+  color: white;
+  min-height: 100vh;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .text-muted {
+  color: #bbb !important;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-text {
+  color: white;
+}
+
+
+
+/* Responsive navbar */
+@media (max-width: 991px) {
+  /* Allow navbar to occupy two rows */
+ .news-navbar .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
+  }
+
+  /* Brand stays in the first row */
+  .news-navbar .navbar-brand {
+  margin-right: 0;
+  }
+ .news-navbar .container-fluid {
+  position: relative;
+}
+.news-navbar .navbar-brand {
+  margin: 0 auto;
+  padding:15px 0px;
+}
+
+
+  /* Navigation links move to the second row */
+  .news-navbar .news-navbar-content {
+    display: flex !important;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px;
+  }
+
+  /* Arrange links horizontally */
+  .news-navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+    width: 100%;
+    margin: 2px 0 0 !important;
+  }
+
+  .news-navbar .navbar-nav .nav-link {
+    padding: 2px;
+  }
+
+  /* Center the theme toggle on the second row */
+  .news-navbar .news-navbar-content > div {
+    margin: 2px auto;
+  }
+
+ h1.top-heading {
+    padding-top: 140px !important ;
+}
+
+.news-navbar {
+  background-color: #f7f7fe;
+  z-index: 1030;
+}
+
+.dark-mode .news-navbar {
+  background-color: #090c11;
+}
+
+}
+
+.news-navbar {
+  background-color: #f7f7fe;
+  z-index: 1030;
+}
+.dark-mode .news-navbar {
+  background-color: #121212;
+  z-index: 1030;
+}
+
+@media (max-width: 523px) {
+  h1.top-heading {
+    padding-top: 175px !important ;
+}
+.news-navbar {
+  background-color: #f7f7fe;
+  z-index: 1030;
+}
+
+.dark-mode .news-navbar {
+  background-color: #090c11;
+}
+
+}
+
+
+/* Position toggle at the top-right */
+.news-navbar .theme-toggle {
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Keep navbar content from overlapping the toggle */
+.news-navbar .container-fluid {
+  position: relative;
+}
+
+.news-navbar .navbar-nav{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* On smaller screens, keep the toggle in the top row */
+@media (max-width: 991px) {
+  .news-navbar .theme-toggle {
+    top: 1px;
+    right: 1px;
+    margin: 0;
+  }
+
+  .news-navbar .navbar-brand {
+    padding-right: 40px;
+  }
+
+   .news-navbar-content {
+  border-top: 0.3px solid black;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5px;
+}
+.dark-mode .news-navbar-content {
+  border-top: 0.3px solid white;
+}
+}
+
